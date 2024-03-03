@@ -426,16 +426,15 @@ body{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     margin: 0px auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     text-align: center;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
 }
 .learning_item{
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -444,6 +443,7 @@ body{
     font-family: "Josefin Sans", sans-serif;
     color: #642100;
     font-size: 18px;
+    border: 10px solid #ffe4e1;
 }
 .works_layout{
     display: grid;
