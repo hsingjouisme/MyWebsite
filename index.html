@@ -56,8 +56,11 @@
            } 
         .works_layout{
             grid-template-columns: auto;
-            grid-row: 4;
+            grid-row: 5;
             grid-column: 1;
+        }
+        .works_description{
+            margin-left: 30px;
         }
         .university_record{
             grid-template-columns: auto;
@@ -127,27 +130,10 @@
             grid-column: 1;
         }
         .skills_layout{
-            grid-template-columns: auto;
-            grid-column: 1;
+            grid-template-columns: repeat(2, 1fr);
         }
-        .gallery{
-            grid-template-columns: auto;
-            grid-row: 2;
-            grid-column: 1;
-        }
-        .works_description{
-            border-left: none;
-            border-top: 1px solid #642100;;
-        }
-        .arrow_left{
-            left: -3%;
-            top: 62%;
-            transform: translate(3%,-62%);
-        }
-        .arrow_right{
-            left: 103%;
-            top: 62%;
-            transform: translate(-103%,-62%);
+        .email_content{
+            border-radius: 0 0px 30px 30px;
         }
         }
         @media (min-width:769px) {
@@ -257,6 +243,7 @@
                 <li>做事用心肯學</li>
                 <li>具有同理心</li>
                 <li>高敏感</li>
+                <li>具備自學能力：如自學JavaScript</li>
             </ul>
             <p>「因為你是可以把不擅長的東西做得很好的人」 -by my friend,Jill</p>
             </div>
@@ -267,48 +254,48 @@
 
     <!-- skill -->
     <section id="persoanl_skill">
+        <div class="title">Skills</div>
         <div class="personal_skill_layout">
-            <div class="title">Skills</div>
-            <div class="skills">
                 <div class="skills_layout" data-aos="fade-left">
                     <div class="skills_item">
-                       <div class="skills_item_title">網頁技術</div> 
-                       <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                       </ul>
+                        <div class="skill_description skill_content">
+                           <div class="skills_item_title">網頁技術</div> 
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul> 
+                        </div>
+                        <div class="skill_background skill_content"></div>
                     </div>
-                    <div class="skills_item" style="background-color: #fdf2f0;">
-                        <div class="skills_item_title">程式語言</div> 
-                        <ul>
-                            <li>JavaScript</li>
-                        </ul>
+                    <div class="skills_item">
+                        <div class="skill_description skill_content">
+                            <div class="skills_item_title">程式語言</div> 
+                            <ul>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill_background skill_content"></div>
                      </div>
-                     <div class="skills_item">
-                        <div class="skills_item_title">框架</div> 
-                        <ul>
-                            <li>Vue</li>
-                        </ul>
-                     </div>
-                    <div class="skills_item" style="background-color: #fdf2f0;">
-                        <div class="skills_item_title">其他</div> 
-                        <ul>
-                            <li>會套用google font和google font icon</li>
-                            <li>會套用AOS動畫</li>
-                        </ul>
+                    <div class="skills_item" >
+                        <div class="skill_description skill_content">
+                            <div class="skills_item_title">其他</div> 
+                            <ul>
+                                <li>會套用google font和google font icon</li>
+                                <li>會套用AOS動畫</li>
+                            </ul>
+                        </div>
+                        <div class="skill_background skill_content"></div>
                     </div>
                 </div>
-               
-            </div>
             <div class="works">
                 <div class="skills_title" data-aos="fade-right">Practice works</div>
-                <div class="works_layout" data-aos="fade-left">
-                    <div class="gallery">
+               <div class="works_layout">
+                    <div class="works_item">
                         <div class="works_img">
                             <img src="image/糖露坊.png" onclick="location.href='https://iamsherolu.github.io/dessert_shop/'">
                         </div>
-                        <div class="works_description" style="float: right;">
-                            <div class="works_title">糖露坊</div>
+                        <div class="works_description">
+                            <h4 class="works_title">糖露坊</h4>
                             <ul>
                                 <li>此為甜點店網頁，內容包含首頁、最新消息、美味甜點、門市據點、關於我們以及購物籃</li>
                                 <li>係以純HTML、CSS以及JavaScript完成之</li>
@@ -321,12 +308,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery">
+                    <div class="works_item">
                         <div class="works_img">
-                            <img src="image/diverson topia.png">
+                            <img src="image/diverson topia.png" onclick="location.href='https://iamsherolu.github.io/game/'"> 
                         </div>
-                        <div class="works_description" style="float: right;">
-                            <div class="works_title">Diverson Topia</div>
+                        <div class="works_description">
+                            <h4 class="works_title">Diverson Topia</h4>
                             <ul>
                                 <li>內含三個小遊戲：包含剪刀石頭布、記憶力大考驗以及終極密碼</li>
                                 <li>係以純HTML、CSS以及JavaScript完成之</li>
@@ -339,12 +326,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery">
+                    <div class="works_item">
                         <div class="works_img">
-                            <img src="image/notes.png">
+                            <img src="image/notes.png" onclick="location.href='https://iamsherolu.github.io/my_website/notes.html'">
                         </div>
-                        <div class="works_description" style="float: right;">
-                            <div class="works_title">程式設計學習筆記</div>
+                        <div class="works_description">
+                            <h4 class="works_title">程式設計學習筆記</h4>
                             <ul>
                                 <li>記錄我在學習前端網頁程式以及相關觀念之筆記</li>
                                 <li>係以純HTML、CSS以及JavaScript完成之</li>
@@ -356,12 +343,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery">
+                    <div class="works_item">
                         <div class="works_img">
-                            <img src="image/yt.png">
+                            <img src="image/yt.png" onclick="location.href='https://iamsherolu.github.io/yt_exercise/'">
                         </div>
-                        <div class="works_description" style="float: right;">
-                            <div class="works_title">YouTube切版</div>
+                        <div class="works_description">
+                            <h4 class="works_title">YouTube切版</h4>
                             <ul>
                                 <li>係仿效YouTub網頁版所做之切版練習</li>
                                 <li>係以純HTML、CSS以及JavaScript完成之</li>
@@ -373,12 +360,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery">
+                    <div class="works_item">
                         <div class="works_img">
-                            <img src="image/樂遊新竹城.png">
+                            <img src="image/樂遊新竹城.png" onclick="location.href='https://iamsherolu.github.io/kidtopia/'">
                         </div>
-                        <div class="works_description" style="float: right;">
-                            <div class="works_title">樂遊新竹城</div>
+                        <div class="works_description">
+                            <h4 class="works_title">樂遊新竹城</h4>
                             <ul>
                                 <li>係連接新竹市政府open data所做之新竹市公園查詢</li>
                                 <li>係以純HTML、CSS以及JavaScript完成之</li>
@@ -390,21 +377,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="arrow_left" onclick="plusSlides(-1)">
-                    <span class="material-symbols-outlined" style="color: snow;">
-                        chevron_left
-                    </span>
-                </div>
-                <div class="arrow_right" onclick="plusSlides(1)" >
-                    <span class="material-symbols-outlined" style="color: snow;">
-                        chevron_right
-                    </span>
-                </div>
             </div>
             <div class="learning_now">
                 <div class="skills_title" data-aos="fade-right">learning now</div>
-               
+                <div class="learning_layout">
+                    <div class="learning_item" style="border: 10px solid #ffe4e1;">Vue</div>
+                    <div class="learning_item" style="border: 10px solid #e0e5df;">Git版本控制</div>
+                    <div class="learning_item" style="border: 10px solid #D9B3B3;">i18n</div>
+                </div>
             </div>
         </div>
     </section>
