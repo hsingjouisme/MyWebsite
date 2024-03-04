@@ -57,6 +57,12 @@
         .works_layout{
             margin: 0;
             padding: 0px 5px;
+            grid-template-columns: auto;
+            grid-row: 5;
+            grid-column: 1;
+        }
+        .works_description{
+            margin-left: 35px;
         }
         .circle{
             width: 430px;
@@ -103,12 +109,24 @@
         .email_content{
             border-radius: 0 0px 30px 30px;
         }
+        .skills_item{
+            height: 200px;
+        }
+        .skills_content{
+            height: 200px;
+        } 
+        .skill_description{
+            height: 200px;
+        }
+        .skill_background{
+            height: 200px;
+        }
         }
         @media (min-width:769px) {
         .menu_icon{
             visibility: hidden;
             position: absolute;
-            }
+            } 
         }
     </style>
     <title>HJL's website</title>
@@ -258,7 +276,7 @@
             <div class="works">
                 <div class="skills_title" data-aos="fade-right">Practice works</div>
                <div class="works_layout">
-                    <div class="works_item">
+                    <div class="works_item"  data-aos="fade-right">
                         <div class="works_img">
                             <img src="image/糖露坊.png" onclick="location.href='https://iamsherolu.github.io/dessert_shop/'">
                         </div>
@@ -276,8 +294,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works_item">
-                        <div class="works_img">
+                    <div class="works_item" data-aos="fade-left">
+                        <div class="works_img" >
                             <img src="image/diverson topia.png" onclick="location.href='https://iamsherolu.github.io/game/'"> 
                         </div>
                         <div class="works_description">
@@ -294,7 +312,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works_item">
+                    <div class="works_item" data-aos="fade-up">
                         <div class="works_img">
                             <img src="image/notes.png" onclick="location.href='https://iamsherolu.github.io/my_website/notes.html'">
                         </div>
@@ -311,7 +329,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works_item">
+                    <div class="works_item" data-aos="fade-down">
                         <div class="works_img">
                             <img src="image/yt.png" onclick="location.href='https://iamsherolu.github.io/yt_exercise/'">
                         </div>
@@ -328,7 +346,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="works_item">
+                    <div class="works_item" data-aos="fade-right">
                         <div class="works_img">
                             <img src="image/樂遊新竹城.png" onclick="location.href='https://iamsherolu.github.io/kidtopia/'">
                         </div>
@@ -348,7 +366,7 @@
             </div>
             <div class="learning_now">
                 <div class="skills_title" data-aos="fade-right">learning now</div>
-                <div class="learning_layout">
+                <div class="learning_layout" data-aos="fade-down">
                     <div class="learning_item" >Vue</div>
                     <div class="learning_item" >Git版本控制</div>
                     <div class="learning_item" >i18n</div>
