@@ -452,31 +452,6 @@ body{
     border-radius: 20px 20px 0px 0px;
     padding: 10px;
 }
-.learning_layout{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    margin: 0px auto;
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.learning_item{
-    width: 100%;
-    max-width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Josefin Sans", sans-serif;
-    color: #642100;
-    font-size: 18px;
-    border: 10px solid #ffe4e1;
-    margin: 10px auto;
-}
 .works_layout{
     display: grid;
     grid-template-columns: 1fr 1fr;
