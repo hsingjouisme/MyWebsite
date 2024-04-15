@@ -54,13 +54,6 @@
         .bottom_message{
             padding-top: 20px;
            } 
-        .works_layout{
-            margin: 0;
-            padding: 0px 5px;
-            grid-template-columns: auto;
-            grid-row: 5;
-            grid-column: 1;
-        }
         .works_description{
             margin-left: 35px;
         }
@@ -99,27 +92,26 @@
         #dot_12{
             display: none;
         }
-        .about_layout{
-            grid-template-columns: auto;
-            grid-column: 1;
-        }
         .skills_layout{
             grid-template-columns: repeat(2, 1fr);
         }
         .email_content{
             border-radius: 0 0px 30px 30px;
         }
-        .skills_item{
-            height: 200px;
+        #aboutLayout{
+            grid-template-columns: auto;
+            grid-row: 1;
         }
-        .skills_content{
-            height: 200px;
-        } 
-        .skill_description{
-            height: 200px;
+        #skillLayout{
+            grid-template-columns: auto;
+            grid-row: 1;
         }
-        .skill_background{
-            height: 200px;
+        #worksLayout{
+            margin: 0;
+            padding: 0px 5px;
+            grid-template-columns: auto;
+            grid-row: 5;
+            grid-column: 1;
         }
         }
         @media (min-width:769px) {
@@ -193,48 +185,7 @@
     <!-- about -->
     <section id="about">
        <div class="title" data-aos="fade-down">About me</div>
-       <div class="about_layout" data-aos="fade-up">
-        <div class="about_item" >
-            <div class="about_title">學經歷</div>
-            <div class="about_item_content">
-                <ul>
-                <li>
-                    畢業於銘傳大學資訊管理學系（2014.9-2018.6）
-                </li>
-                <li>曾任系上教學助理（銘傳大學教學卓越計畫）（2016.9-2017.1）</li>
-                <li>畢業後投身於高普考（2018.7-2023.7）</li>
-                <li>轉往朝前端工程師的道路邁進（2023.10-now）</li>
-            </ul>
-            </div>
-            
-        </div>
-        <div class="about_item">
-            <div class="about_title">證照與獲獎紀錄</div>
-            <div class="about_item_content">
-              <ul>
-                <li>考取TQC中文輸入證照與英文輸入證照(2014)</li>
-                <li>考取辦公室應用Word 2010、PPT 2010、Excel 2010實用級合格證書（2015）</li>
-                <li>考取鼎新ERP配銷模組與生產製造模組證照（2017、2018）</li>
-                <li>參加E化系統創意競賽榮獲第三名(2018)</li>
-            </ul>  
-            </div>
-            
-        </div>
-        <div class="about_item">
-            <div class="about_title">特質</div>
-            <div class="about_item_content">
-                <ul>
-                <li>觀察力敏銳</li>
-                <li>不輕易放棄</li>
-                <li>做事用心肯學</li>
-                <li>具有同理心</li>
-                <li>高敏感</li>
-                <li>具備自學能力：如自學JavaScript</li>
-            </ul>
-            <p>「因為你是可以把不擅長的東西做得很好的人」 -by my friend,Jill</p>
-            </div>
-            
-        </div>
+       <div class="about_layout" data-aos="fade-up" id="aboutLayout">
        </div>
     </section>
 
@@ -242,130 +193,11 @@
     <section id="persoanl_skill">
         <div class="title">Skills</div>
         <div class="personal_skill_layout">
-                <div class="skills_layout" data-aos="fade-left">
-                    <div class="skills_item">
-                        <div class="skill_description skill_content">
-                           <div class="skills_item_title">網頁技術</div> 
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul> 
-                        </div>
-                        <div class="skill_background skill_content"></div>
-                    </div>
-                    <div class="skills_item">
-                        <div class="skill_description skill_content">
-                            <div class="skills_item_title">程式語言</div> 
-                            <ul>
-                                <li>JavaScript</li>
-                            </ul>
-                        </div>
-                        <div class="skill_background skill_content"></div>
-                     </div>
-                    <div class="skills_item" >
-                        <div class="skill_description skill_content">
-                            <div class="skills_item_title">其他</div> 
-                            <ul>
-                                <li>會套用google font和google font icon</li>
-                                <li>會套用AOS動畫</li>
-                            </ul>
-                        </div>
-                        <div class="skill_background skill_content"></div>
-                    </div>
-                </div>
+                <div class="skills_layout" data-aos="fade-left" id="skillLayout"></div>
+
             <div class="works">
                 <div class="skills_title" data-aos="fade-right">Practice works</div>
-               <div class="works_layout">
-                    <div class="works_item" data-aos="fade-down">
-                        <div class="works_img">
-                            <img src="image/yt切版.png" onclick="location.href='https://hsingjouisme.github.io/yt_exercise/'">
-                        </div>
-                        <div class="works_description">
-                            <h4 class="works_title">YouTube切版</h4>
-                            <ul>
-                                <li>係仿效YouTub網頁版所做之切版練習</li>
-                                <li>係以純HTML、CSS以及JavaScript完成之</li>
-                                <li>目的：加強練習切版</li>
-                                <li>此作品暫時不具有RWD</li>
-                            </ul>
-                            <div class="works_btns">
-                                <div class="demo" onclick="location.href='https://hsingjouisme.github.io/yt_exercise/'">demo</div>
-                                <div class="github_code" onclick="location.href='https://github.com/hsingjouisme/yt_exercise'">GitHub Code</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works_item"  data-aos="fade-right">
-                        <div class="works_img">
-                            <img src="image/糖露坊.png" onclick="location.href='https://hsingjouisme.github.io/DessertShop/index.html'">
-                        </div>
-                        <div class="works_description">
-                            <h4 class="works_title">糖露坊</h4>
-                            <ul>
-                                <li>此為甜點店網頁，內容包含首頁、最新消息、美味甜點、門市據點、關於我們以及購物籃</li>
-                                <li>係以純HTML、CSS以及JavaScript完成之</li>
-                                <li>為一響應式網頁</li>
-                                <li>目的：練習切版與JavaScript</li>
-                            </ul>
-                            <div class="works_btns">
-                                <div class="demo" onclick="location.href='https://hsingjouisme.github.io/DessertShop/index.html'">demo</div>
-                                <div class="github_code" onclick="location.href='https://github.com/hsingjouisme/DessertShop'">GitHub Code</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works_item" data-aos="fade-left">
-                        <div class="works_img" >
-                            <img src="image/diverson topia.png" onclick="location.href='https://hsingjouisme.github.io/DiversionTopia/index.html'"> 
-                        </div>
-                        <div class="works_description">
-                            <h4 class="works_title">Diverson Topia</h4>
-                            <ul>
-                                <li>內含三個小遊戲：包含剪刀石頭布、記憶力大考驗以及終極密碼</li>
-                                <li>係以純HTML、CSS以及JavaScript完成之</li>
-                                <li>為一響應式網頁</li>
-                                <li>目的：加強練習JavaScript</li>
-                            </ul>
-                            <div class="works_btns">
-                                <div class="demo" onclick="location.href='https://hsingjouisme.github.io/DiversionTopia/index.html'">demo</div>
-                                <div class="github_code" onclick="location.href='https://github.com/hsingjouisme/DiversionTopia'">GitHub Code</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works_item" data-aos="fade-up">
-                        <div class="works_img">
-                            <img src="image/截圖 2024-03-06 下午4.59.51.png" onclick="location.href='https://hsingjouisme.github.io/notes/notes.html'">
-                        </div>
-                        <div class="works_description">
-                            <h4 class="works_title">前端學習筆記</h4>
-                            <ul>
-                                <li>記錄我在學習前端網頁程式以及相關觀念之筆記</li>
-                                <li>係以純HTML、CSS以及JavaScript完成之</li>
-                                <li>為一響應式網頁</li>
-                            </ul>
-                            <div class="works_btns">
-                                <div class="demo" onclick="location.href='https://hsingjouisme.github.io/notes/notes.html'">demo</div>
-                                <div class="github_code" onclick="location.href='https://github.com/hsingjouisme/notes'">GitHub Code</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works_item" data-aos="fade-right">
-                        <div class="works_img">
-                            <img src="image/樂遊新竹城.png" onclick="location.href='https://hsingjouisme.github.io/kidTopia/'">
-                        </div>
-                        <div class="works_description">
-                            <h4 class="works_title">樂遊新竹城</h4>
-                            <ul>
-                                <li>係利用新竹市政府open data所做之新竹市公園查詢</li>
-                                <li>係以純HTML、CSS以及JavaScript完成之</li>
-                                <li>目的：練習將物件顯示到HTML頁面上</li>
-                                <li>尚未完成：天氣api之串接，目前可以顯示在控制台了。但是還不能顯示至html頁面。</li>
-                            </ul>
-                            <div class="works_btns">
-                                <div class="demo" onclick="location.href='https://hsingjouisme.github.io/kidTopia/'">demo</div>
-                                <div class="github_code" onclick="location.href='https://github.com/hsingjouisme/kidTopia'">GitHub Code</div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+               <div class="works_layout" id="worksLayout"></div>
         </div>
     </section>
 
